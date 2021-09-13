@@ -157,7 +157,7 @@ def output():
     newDFA.showTransitions()
 
 
-# dfa.takeInput()
+dfa.takeInput()
 prepMarked()
 zeroEq()
 minimize()
