@@ -29,7 +29,9 @@ class DFA:
 
     def display(self):
         print("-----------------------------")
-        print(f'{self.states} {self.initial} {self.final_states}\n{self.alphabet}\n{self.transitions}')
+        print(f'States: {self.states}\nInitial State: {self.initial}\nFinal States: {self.final_states}\nAlphabet: {self.alphabet}')
+        print('Transition Table: ')
+        self.showTransitions()
         print("-----------------------------")
 
     def showTransitions(self):

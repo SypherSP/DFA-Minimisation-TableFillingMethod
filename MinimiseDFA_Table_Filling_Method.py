@@ -9,6 +9,7 @@ newDFA = DFA()
 marked = {}
 finalEq = []
 
+# EXAMPLE TEST CASES
 
 # test1
 
@@ -30,12 +31,15 @@ finalEq = []
 
 # test 3
 
-# dfa.states = ['A', 'B', 'C', 'D', 'E', 'G']
-# dfa.alphabet = ['0', '1']
-# dfa.final_states = ['B', 'C', 'G']
-# dfa.initial = 'A'
-# dfa.transitions = {'A': {'0': 'B', '1': 'C'}, 'B': {'0': 'D', '1': 'E'}, 'C': {
-#     '0': 'E', '1': 'D'}, 'D': {'0': 'G', '1': 'G'}, 'E': {'0': 'G', '1': 'G'}, 'G': {'0': 'G', '1': 'G'}}
+dfa.states = ['A', 'B', 'C', 'D', 'E', 'G']
+dfa.alphabet = ['0', '1']
+dfa.final_states = ['B', 'C', 'G']
+dfa.initial = 'A'
+dfa.transitions = {'A': {'0': 'B', '1': 'C'}, 'B': {'0': 'D', '1': 'E'}, 'C': {
+    '0': 'E', '1': 'D'}, 'D': {'0': 'G', '1': 'G'}, 'E': {'0': 'G', '1': 'G'}, 'G': {'0': 'G', '1': 'G'}}
+
+print("Example initialised with the following DFA:")
+dfa.display()
 
 
 def printMarked():
@@ -156,8 +160,7 @@ def output():
     print('Following is the Minimum State Transition Table:')
     newDFA.showTransitions()
 
-
-dfa.takeInput()
+# dfa.takeInput()
 prepMarked()
 zeroEq()
 minimize()
